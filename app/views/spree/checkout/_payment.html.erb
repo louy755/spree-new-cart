@@ -37,7 +37,7 @@
 
     <%= render partial: 'spree/checkout/payment/storecredit' %>
 
-    <ul class="list-group" id="payment-method-fields" data-hook>
+    <!-- <ul class="list-group" id="payment-method-fields" data-hook>
       <% @order.available_payment_methods.each do |method| %>
         <li class="list-group-item">
           <label>
@@ -46,9 +46,9 @@
           </label>
         </li>
       <% end %>
-    </ul>
+    </ul> -->
 
-    <ul class="nav" id="payment-methods" data-hook>
+    <!-- <ul class="nav" id="payment-methods" data-hook>
       <% @order.available_payment_methods.each do |method| %>
         <li id="payment_method_<%= method.id %>" class="<%= 'last' if method == @order.available_payment_methods.last %>" data-hook>
           <fieldset>
@@ -56,7 +56,7 @@
           </fieldset>
         </li>
       <% end %>
-    </ul>
+    </ul> -->
 
 
     <% if Spree::Frontend::Config[:coupon_codes_enabled] %>
